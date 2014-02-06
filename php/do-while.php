@@ -16,4 +16,11 @@ do {
 	$b -= 5;
 } while ($b >= -10);
 
+
+$c = 2;
+
+do {
+	echo "\$c is equal to {$c}\n";
+	$c *= $c;
+} while ($c <= 1000000);
 ?>
