@@ -9,3 +9,11 @@ do {
 
 
 
+$b = 100;
+
+do { 
+	echo "\$b is equal to {$b}\n";
+	$b -= 5;
+} while ($b >= -10);
+
+?>
