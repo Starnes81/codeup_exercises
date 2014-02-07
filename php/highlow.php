@@ -12,7 +12,7 @@ fwrite(STDOUT, "Hello $first_name\n");
 
 //rand number
 
-mt_rand(1,100);
+$random_number = mt_rand(1,100);
 
 //guess
 
@@ -22,15 +22,15 @@ $guess_number = fgets(STDIN);
 
 //if
 
-if ($guess_number < mt_rand()){
+if ($guess_number < $random_number{
 	echo "To Low!";
 }
 //elseif
-elseif ($guess_numer > mt_rand()){
+elseif ($guess_numer > $random_number){
 	echo "To High!";
 }
 
-else ($guess_number == mt_rand()){
+else ($guess_number == $random_number){
 	echo "You Guessed Right!"
 }
 
