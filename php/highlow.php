@@ -2,7 +2,7 @@
 <?php
 //high low game
 
-fwrite(STDOUT, 'What is your name?' );
+fwrite(STDOUT, 'What is your name? ' );
 //input name
 
 $first_name = fgets(STDIN);
@@ -14,6 +14,8 @@ fwrite(STDOUT, "Hello $first_name\n");
 
 $random_number = mt_rand(1,100);
 
+
+
 //guess
 
 fwrite(STDOUT, 'Guess a number between 1 and 100!');
@@ -21,20 +23,26 @@ fwrite(STDOUT, 'Guess a number between 1 and 100!');
 $guess_number = fgets(STDIN);
 
 //if
+while ($random_number <> $guess_number){
 
-if ($guess_number < $random_number{
-	echo "To Low!";
-}
+if ($guess_number > $random_number){
+	echo "Too High!\n";
+	fwrite(STDOUT, ' Guess again! ');
+$guess_number = fgets(STDIN);
+} 
+
+if ($guess_number < $random_number){
+	echo "Too low!\n";
+	fwrite(STDOUT, 'Guess again! ');
+$guess_number = fgets(STDIN);
+
+} 
 //elseif
-elseif ($guess_numer > $random_number){
-	echo "To High!";
+
 }
 
-else ($guess_number == $random_number){
-	echo "You Guessed Right!"
-}
-
-
+Echo "Great Guess!";
 
 
 //exit
+
