@@ -22,12 +22,19 @@ $guess_number = fgets(STDIN);
 
 //if
 
-
-
+if ($guess_number < mt_rand()){
+	echo "To Low!";
+}
 //elseif
+elseif ($guess_numer > mt_rand()){
+	echo "To High!";
+}
+
+else ($guess_number == mt_rand()){
+	echo "You Guessed Right!"
+}
 
 
-else
 
 
 //exit
