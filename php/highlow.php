@@ -6,7 +6,7 @@ $min =1;
 $max =100;
 
 
-if ($argv[1] > $argv[2]) {
+if ($argv[1] < $argv[2]) {
 	$min = $argv[2];
 	$max = $argv[1];
 } else {
