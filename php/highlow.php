@@ -1,5 +1,18 @@
 
 <?php
+//adding args
+
+$min =1;
+$max =100;
+
+
+if ($argv[1] <> $argv[2]) {
+	$min = $argv[2];
+	$max = $argv[1];
+} else {
+	$min = $argv[1];
+	$min = $argv[2];
+}
 //high low game
 
 fwrite(STDOUT, 'What is your name? ' );
@@ -12,8 +25,7 @@ fwrite(STDOUT, "Hello $first_name\n");
 
 //rand number
 
-$random_number = mt_rand(1,100);
-
+$random_number = mt_rand($min,$max);
 
 
 //guess
@@ -41,7 +53,7 @@ $guess_number = fgets(STDIN);
 
 }
 
-Echo "Great Guess!";
+Echo "Great Guess!\n";
 
 
 //exit
