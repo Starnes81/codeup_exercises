@@ -11,7 +11,7 @@ if ($argv[1] < $argv[2]) {
 	$max = $argv[2];
 } else {
 	$min = $argv[2];
-	$min = $argv[1];
+	$max = $argv[1];
 }
 //high low game
 
@@ -30,7 +30,7 @@ $random_number = mt_rand($min,$max);
 
 //guess
 
-fwrite(STDOUT, 'Guess a number between 1 and 100!');
+fwrite(STDOUT, 'Guess a number between {$min} and {$max}');
 
 $guess_number = fgets(STDIN);
 
