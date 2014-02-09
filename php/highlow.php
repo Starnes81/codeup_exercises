@@ -7,11 +7,11 @@ $max =100;
 
 
 if ($argv[1] < $argv[2]) {
-	$min = $argv[2];
-	$max = $argv[1];
-} else {
 	$min = $argv[1];
+	$max = $argv[2];
+} else {
 	$min = $argv[2];
+	$min = $argv[1];
 }
 //high low game
 
