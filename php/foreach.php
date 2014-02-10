@@ -12,11 +12,11 @@ foreach ($stuff as $things)
 		echo "{$things} is a float\n";
 	} elseif (is_array($things)) {
 		echo "{$things} is an array\n";
-	}
-
-foreach ($stuff as $everything) {
+	} foreach ($stuff as $everything) {
 	echo "{$everything}\n";
 }
+
+
 
 //second loop
 // $more_stuff = array(array("Dave", 'DAVE', 4), 2+4+6+8, 1==0);
