@@ -28,14 +28,16 @@ $books = array(
  
 foreach ($books as $title => $book) {
 	echo ("$title\n");
-	foreach ($book as $key => $value){ 
-		echo "  $key $value\n";
-		// if ($value < 1)
-	}
+	// if ($key === "Published" && $value > 1950)
+	   if ($book['published'] > 1950) {
+
+	   }
 	
 }
+ 
 
-
-
+echo "Published: " . $book['published'] . "\n";
+echo "Auther: " . $book['author'] . "\n";
+echo "Pages: " . $book['pages'] . "\n";
 
 ?>
