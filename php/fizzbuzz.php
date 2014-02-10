@@ -3,20 +3,19 @@
 
 
 for ($i =1; $i <= 100; $i++) {
-	echo "$i\n";
 
-$fizz = ($i % 3 == 0);
-$buzz = ($i % 5 == 0);
-
-if ($i == $fizz) {
+if ($i % 3) {
 	echo "FIZZ\n";
 }
 
-if ($i == $buzz) {
+if ($i % 5) {
 	echo "BUZZ\n";
 }
 
-elseif ($fizz&&$buzz) {
+if ($i % 3 == 0 && $i % 5 == 0) {
+	echo "FIZZBUZZ";
+}
+else {
 	echo "$i\n";
 }
 
