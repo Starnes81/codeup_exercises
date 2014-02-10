@@ -4,8 +4,8 @@ fwrite(STDOUT, 'Pick a starting number!');
 
 $starting_number = fgets(STDIN);
 
-if (!is_numeric($starting_number)) {
-	echo " '{$starting_number}' is numeric ", PHP_EOL;
+if (is_numeric($starting_number)) {
+	echo " '{$starting_number}' is numeric", PHP_EOL;
 } else  {
 		echo " '{$starting_number}' is NOT numeric ", PHP_EOL;	
 }
@@ -15,7 +15,7 @@ fwrite(STDOUT, 'Pick a endinging number!');
 
 $ending_number = fgets(STDIN);
 
-if (!is_numeric($ending_number)) {
+if (is_numeric($ending_number)) {
 	echo " '{$ending_number}' is numeric ", PHP_EOL;
 } else  {
 	echo " '{$ending_number}' is NOT numeric ", PHP_EOL;
