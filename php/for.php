@@ -16,9 +16,7 @@ $num_pick = fgets(STDIN);
 
 for ($i = $starting_number; $i <= $ending_number; $i += $num_pick) {
 	echo "$i\n";
-} if ($num_pick == 1) {
- 	echo 
-}
+} 
 
 
 ?>
