@@ -14,14 +14,20 @@ foreach ($stuff as $things)
 		echo "{$things} is an array\n";
 	}
 
-//second loop
-$more_stuff = array(array("Dave", 'DAVE', 4), 2+4+6+8, 1==0);
+foreach ($stuff as $everything) {
+	echo "{$everything}\n";
+}
 
-foreach ($more_stuff as $junk){
-	if (is_scalar($junk)) {
-		echo "{$junk} is scalar\n";
+//second loop
+// $more_stuff = array(array("Dave", 'DAVE', 4), 2+4+6+8, 1==0);
+
+foreach ($stuff as $things){
+	if (is_scalar($things)) {
+		echo "{$things} is scalar\n";
 	}
 }
+
+
 
 ?>
 
