@@ -25,12 +25,14 @@ $books = array(
 	
 );
  
- // $titles = ('The Hobbit', 'Game of Thrones', 'The Catcher in the Rye', 'A take of Two Cities');
-
-foreach ($books as $key => $value) {
-	// foreach ($book as $key => array) {
-	// }
-	echo ("Books title is $key\n");
+ 
+foreach ($books as $title => $book) {
+	echo ("$title\n");
+	foreach ($book as $key => $value){ 
+		echo "  $key $value\n";
+		// if ($value < 1)
+	}
+	
 }
 
 
