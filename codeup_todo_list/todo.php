@@ -7,8 +7,9 @@ $items = array();
 do {
     // Iterate through list items
     foreach ($items as $key => $item) {
+        $key = $key+1;
         // Display each item and a newline
-        echo "[{$key}] {$item}\n";
+        echo "[{$key}]  {$item}\n";
     }
 
     // Show the menu options
@@ -17,6 +18,8 @@ do {
     // Get the input from user
     // Use trim() to remove whitespace and newlines
     $input = (strtoupper(trim(fgets(STDIN))));
+
+
 
     // Check for actionable input
     if ($input == 'N') {
