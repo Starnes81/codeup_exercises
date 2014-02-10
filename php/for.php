@@ -13,11 +13,13 @@ $ending_number = fgets(STDIN);
 fwrite(STDOUT, 'Pick a number to count by!');
 
 $num_pick = fgets(STDIN);
-
+// added default increment
 for ($i = $starting_number; $i <= $ending_number; $i += $num_pick) {
 	echo "$i\n";
-} 
-
+ if ($num_pick == 0){
+ 	echo $i ++;
+ }
+}
 
 ?>
 
