@@ -12,7 +12,7 @@ $books = array(
 		'author' => 'Georage R. R. Martin',
 		'pages' => 835
 	),
-	'the Cacther in the Rye' => array(
+	'The Cacther in the Rye' => array(
 		'published' => 1951,
 		'author' => 'J.D. Salinger',
 		'pages' => 220
@@ -24,14 +24,14 @@ $books = array(
 	)
 	
 );
+ 
+ // $titles = ('The Hobbit', 'Game of Thrones', 'The Catcher in the Rye', 'A take of Two Cities');
 
-
-// foreach ($books as $book) {
-// 	// foreach ($book as $key => array) {
-		
-// 	// }
-// 	echo "Books title is $book\n";
-// }
+foreach ($books as $key => $value) {
+	// foreach ($book as $key => array) {
+	// }
+	echo ("Books title is $key\n");
+}
 
 
 
