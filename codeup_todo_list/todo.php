@@ -7,6 +7,7 @@ $items = array();
 do {
     // Iterate through list items
     foreach ($items as $key => $item) {
+        //added $key=1 to out put 1 as default instead of 0
         $key = $key+1;
         // Display each item and a newline
         echo "[{$key}]  {$item}\n";
