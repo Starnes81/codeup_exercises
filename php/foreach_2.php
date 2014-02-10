@@ -4,7 +4,7 @@
 $books = array(
 	'The Hobbit' => array(
 		'published' => 1937,
-		'author' => 'J.R.R. Tolkien',
+		'author' => 'J. R. R. Tolkien',
 		'pages' => 310
 	),
 	'Game of Thrones' => array(
@@ -18,14 +18,20 @@ $books = array(
 		'pages' => 220
 	),
 	'A Tale of Two Cities' => array(
-		'published' => 1859
+		'published' => 1859,
 		'author' => 'Charles Dickens',
 		'pages' => 544
-	),
+	)
 	
 );
 
 
+// foreach ($books as $book) {
+// 	// foreach ($book as $key => array) {
+		
+// 	// }
+// 	echo "Books title is $book\n";
+// }
 
 
 
