@@ -8,10 +8,16 @@ fwrite(STDOUT, 'Pick a endinging number!');
 
 $ending_number = fgets(STDIN); 
 
+//add user increment
 
+fwrite(STDOUT, 'Pick a number to count by!');
 
-for ($i = $starting_number; $i <= $ending_number; $i +=1) {
+$num_pick = fgets(STDIN);
+
+for ($i = $starting_number; $i <= $ending_number; $i += $num_pick) {
 	echo "$i\n";
+} if ($num_pick == 1) {
+ 	echo 
 }
 
 
