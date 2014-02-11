@@ -11,9 +11,7 @@ function add($a, $b = 0) {
 	echo $a + $b . PHP_EOL;	
 	} else {
 		echo "Input must be numeric!\n";
-    } if ($a || $b = 0) {
-    	echo "You can not divide 0 by 0!\n";
-	}
+    } 
 }
 add('Steve', 10);
 
@@ -23,9 +21,7 @@ function subtract($a, $b = 0) {
 	echo $a - $b . PHP_EOL;
     } else {
     	echo "Input must be numeric!\n";
-    } if ($a || $b = 0) {
-    	echo "You can not divide 0 by 0!\n";
-	}
+    }
 }
 subtract('dog', 0);
 
@@ -36,9 +32,7 @@ function multiply($a, $b = 0) {
 	echo $a * $b . PHP_EOL;
     } else {
     	echo "Input must be numeric!\n";
-    } if ($a || $b = 0) {
-    	echo "You can not divide 0 by 0!\n";
-	}
+    }
 }
 multiply('cat', 40.405);
 
@@ -46,13 +40,13 @@ multiply('cat', 40.405);
 function divide($a, $b = 0) {
 	if (is_numeric($a) && is_numeric($b)) {
 	echo $a / $b . PHP_EOL;	
+	} elseif ($b == 0) {
+    	echo "You can not divide 0 by 0!\n";
 	} else {
 		echo "Input must be numeric!\n";
-	} if ($a || $b = 0) {
-    	echo "You can not divide 0 by 0!\n";
 	}
 }
-divide("HELLO", 30);
+divide('hello', 0);
 
 //modulus
 function modulus($a , $b = 0) {
@@ -60,9 +54,7 @@ function modulus($a , $b = 0) {
 	echo ($a % $b) . PHP_EOL;
     } else {
     	echo "Input must be numeric!\n";
-    } if ($a || $b = 0) {
-    	echo "You can not divide 0 by 0!\n";
-	}
+    } 
 }
 modulus(60, 'MATH');
 
