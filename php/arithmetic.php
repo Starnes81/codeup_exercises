@@ -47,12 +47,13 @@ function multiply($a, $b = 0) {
 
 //divide
 function divide($a, $b = 0) {
-	if ($b == 0) {
-		echo "ERROR can not divide 0!\n";
-		return FALSE;
-	} elseif (paramAreValid($a, $b)) {
-		return $a / $b; 
-	}	
+	if (paramAreValid($a, $b) && $b != 0) {
+		if ($b == 0) {
+			return FALSE;
+	} else {
+		return $a / $b; 	
+	}
+}
 }
 
 //modulus
