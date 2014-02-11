@@ -4,6 +4,8 @@
 function paramAreValid($a, $b) {
 	if(!is_numeric($a) || !is_numeric($b)) {
 		echo "ERROR!!! Input is not a number!" . PHP_EOL;
+		var_dump($a);
+		var_dump($b);
 		return false;
 		} else {
 		return true;
@@ -63,11 +65,11 @@ function modulus($a , $b = 0) {
 	}
 
 
-add('Steve', 10);
-subtract('dog', 0);
-multiply('cat', 40.405);
-divide(50, 0);
-modulus(60, 'MATH');
+echo add('Steve', 10);
+echo subtract('dog', 0);
+echo multiply('cat', 40.405);
+echo divide(50, 'dog');
+echo modulus(60, 'MATH');
 
 
 
