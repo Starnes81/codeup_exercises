@@ -3,14 +3,14 @@
 
 
 for ($i =1; $i <= 100; $i++) {
-	if ($i % 3) {
+	if ($i % 3 == 0) {
 		echo "FIZZ\n";
 	}
-	if ($i % 5) {
+	elseif ($i % 5 == 0) {
 		echo "BUZZ\n";
 	}
-	if ($i % 3 == 0 && $i % 5 == 0) {
-		echo "FIZZBUZZ";
+	elseif ($i % 3 == 0 && $i % 5 == 0) {
+		echo "FIZZBUZZ\n";
 	}
 	else {
 		echo "$i\n";
