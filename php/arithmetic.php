@@ -1,6 +1,9 @@
 <?php
 
 
+function validate() {
+		echo "ERROR!!! Input is not a number!" . PHP_EOL;
+}
 
 //creating function exercises
 
@@ -10,7 +13,7 @@ function add($a, $b = 0) {
 	if (is_numeric($a) && is_numeric($b)){
 	echo $a + $b . PHP_EOL;	
 	} else {
-		echo "Input must be numeric $a $b!\n";
+		validate();
     } 
 }
 add('Steve', 10);
@@ -22,7 +25,7 @@ function subtract($a, $b = 0) {
 	if (is_numeric($a) && is_numeric($b)) {
 	echo $a - $b . PHP_EOL;
     } else {
-    	echo "Input must be numeric $a $b!\n";
+    	validate();
     }
 }
 subtract('dog', 0);
@@ -33,7 +36,7 @@ function multiply($a, $b = 0) {
 	if (is_numeric($a) && is_numeric($b)) {
 	echo $a * $b . PHP_EOL;
     } else {
-    	echo "Input must be numeric $a $b!\n";
+    	validate();
     }
 }
 multiply('cat', 40.405);
@@ -45,7 +48,7 @@ function divide($a, $b = 0) {
 	} elseif (is_numeric($a) && is_numeric($b)) {
 		echo $a / $b . PHP_EOL;	
 	} else {
-		echo "Input must be numeric $a $b!\n";
+		validate();
 	}
 }
 divide(50, 0);
@@ -55,7 +58,7 @@ function modulus($a , $b = 0) {
 	if (is_numeric($a) && is_numeric($b)) {
 	echo ($a % $b) . PHP_EOL;
     } else {
-    	echo "Input must be numeric $a $b!\n";
+    	validate();
     } 
 }
 modulus(60, 'MATH');
