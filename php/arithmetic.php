@@ -38,15 +38,15 @@ multiply('cat', 40.405);
 
 //divide
 function divide($a, $b = 0) {
-	if (is_numeric($a) && is_numeric($b)) {
-	echo $a / $b . PHP_EOL;	
-	} elseif ($b == 0) {
+	 if ($b == 0) {
     	echo "You can not divide 0 by 0!\n";
+	} elseif (is_numeric($a) && is_numeric($b)) {
+		echo $a / $b . PHP_EOL;	
 	} else {
 		echo "Input must be numeric!\n";
 	}
 }
-divide('hello', 0);
+divide(50, 0);
 
 //modulus
 function modulus($a , $b = 0) {
