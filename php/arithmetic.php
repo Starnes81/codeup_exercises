@@ -10,16 +10,19 @@ function add($a, $b) {
 	echo ($a + $b) . PHP_EOL;
 }
 add(5, 10);
+
 //subtract
 function subtract($a, $b) {
 	echo ($a - $b) . PHP_EOL;
 }
 subtract(30, 15);
+
 //multiply
 function multiply($a, $b) {
 	echo ($a * $b) . PHP_EOL;
 }
 multiply(60, 15);
+
 //divide
 function divide($a, $b) {
 	echo ($a / $b) . PHP_EOL;
@@ -27,6 +30,9 @@ function divide($a, $b) {
 divide(50, 20);
 
 //modulus
-
+function modulus($a , $b) {
+	echo ($a % $b) . PHP_EOL;
+}
+modulus(40, 17);
 
 ?>
