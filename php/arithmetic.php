@@ -10,17 +10,19 @@ function add($a, $b = 0) {
 	if (is_numeric($a) && is_numeric($b)){
 	echo $a + $b . PHP_EOL;	
 	} else {
-		echo "Input must be numeric!\n";
+		echo "Input must be numeric $a $b!\n";
     } 
 }
 add('Steve', 10);
+
+
 
 //subtract
 function subtract($a, $b = 0) {
 	if (is_numeric($a) && is_numeric($b)) {
 	echo $a - $b . PHP_EOL;
     } else {
-    	echo "Input must be numeric!\n";
+    	echo "Input must be numeric $a $b!\n";
     }
 }
 subtract('dog', 0);
@@ -31,7 +33,7 @@ function multiply($a, $b = 0) {
 	if (is_numeric($a) && is_numeric($b)) {
 	echo $a * $b . PHP_EOL;
     } else {
-    	echo "Input must be numeric!\n";
+    	echo "Input must be numeric $a $b!\n";
     }
 }
 multiply('cat', 40.405);
@@ -43,7 +45,7 @@ function divide($a, $b = 0) {
 	} elseif (is_numeric($a) && is_numeric($b)) {
 		echo $a / $b . PHP_EOL;	
 	} else {
-		echo "Input must be numeric!\n";
+		echo "Input must be numeric $a $b!\n";
 	}
 }
 divide(50, 0);
@@ -53,9 +55,11 @@ function modulus($a , $b = 0) {
 	if (is_numeric($a) && is_numeric($b)) {
 	echo ($a % $b) . PHP_EOL;
     } else {
-    	echo "Input must be numeric!\n";
+    	echo "Input must be numeric $a $b!\n";
     } 
 }
 modulus(60, 'MATH');
+
+
 
 ?>
