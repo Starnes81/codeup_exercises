@@ -47,9 +47,10 @@ function multiply($a, $b = 0) {
 function divide($a, $b = 0) {
 	if ($b == 0) {
 		echo "ERROR can not divide 0!\n";
+		return FALSE;
 	} elseif (paramAreValid($a, $b)) {
-		return $a / $b; {
-	} 
+		return $a / $b; 
+	}	
 }
 
 //modulus
@@ -60,7 +61,7 @@ function modulus($a , $b = 0) {
     	return 0;
     } 
 	}
-}
+
 
 add('Steve', 10);
 subtract('dog', 0);
