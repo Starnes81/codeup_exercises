@@ -32,7 +32,7 @@ switch($day_of_week) {
     //etc
 
 }
-
+r
 
 
 
