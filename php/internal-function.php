@@ -10,14 +10,14 @@ $array = array(1,2,3);
 function varCheck($var, $var_name) {
 	unset($nothing);
 	if (empty($var_name)) {
-		echo "$var_name is EMPTY" . PHP_EOL;
+		return "$var_name is EMPTY" . PHP_EOL;
 	} else {
-		echo "$var_name is Not EMPTY" . PHP_EOL;
+		return "$var_name is Not EMPTY" . PHP_EOL;
 	}
 	if (isset($var_name)) {
-		echo "$var_name is SET" . PHP_EOL;
+		return "$var_name is SET" . PHP_EOL;
 	} else {
-		echo "$var_name is Not SET" . PHP_EOL;
+		return "$var_name is Not SET" . PHP_EOL;
     }
 }
 // TEST: If var $nothing is set, display '$nothing is SET'
