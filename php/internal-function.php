@@ -19,7 +19,6 @@ function varCheck($var, $var_name) {
 		echo "$var_name is Not SET" . PHP_EOL;
     }
 }
-
 // TEST: If var $nothing is set, display '$nothing is SET'
 // TEST: If var $nothing is empty, display '$nothing is EMPTY'
 echo varCheck($nothing, '$nothing');
@@ -27,8 +26,13 @@ echo varCheck($nothing, '$nothing');
 // TEST: If var $something is set, display '$something is SET'
 echo varCheck($something, '$something');
 // Serialize the array $array, and output the results
+$serialTest = serialize($array);
 
+echo $serialTest . PHP_EOL;
 // Unserialize the array $array, and output the results
+$unserialTest = unserialize($serialTest);
+
+echo $unserialTest;
 
 
 
