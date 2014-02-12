@@ -8,6 +8,7 @@ $array = array(1,2,3);
 
 // Create a funciton that checks if a variable is set or empty, and display "$variable_name is SET|EMPTY"
 function varCheck($var, $var_name) {
+	unset($nothing);
 	if (empty($var_name)) {
 		echo "$var_name is EMPTY" . PHP_EOL;
 	} else {
