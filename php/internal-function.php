@@ -32,7 +32,7 @@ echo $serialTest . PHP_EOL;
 // Unserialize the array $array, and output the results
 $unserialTest = unserialize($serialTest);
 
-echo $unserialTest;
+var_dump($unserialTest);
 
 
 
