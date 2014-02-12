@@ -13,20 +13,30 @@ $items = array();
 
 function list_items($list) {
     $result = '';
+
     foreach ($list as $key => $item) {
-        $result .= "$key"  .' '. $item .  PHP_EOL;
+        $newIndex = $key + 1;
+        $result .= "$newIndex"  .' '. $item .  PHP_EOL;
     }
     return $result;
 }
 
 function get_input($upper = FALSE){ 
-    if ($upper) {
-        return (strtoupper(trim(fgets(STDIN))));
-    } else {
-        return trim(fgets(STDIN));
-    }
+    $input =trim(fgets(STDIN));
+    return $upper ? strtoupper($input) : $input;
+    }// if ($upper) {
+    //     return (strtoupper(trim(fgets(STDIN))));
+    // } else {
+    //     return trim(fgets(STDIN));
+    // }
 
-}
+// function sort_menu ($sort = FALSE) {
+//     if ($sort =='S') {
+//         return 'Order A-Z' 
+//     } 
+
+// }
+
 
 // The loop!
 do {
@@ -45,7 +55,7 @@ do {
     
 
     // Show the menu options
-    echo '(N)ew item, (R)emove item, (Q)uit : ';
+    echo '(N)ew item, (R)emove item, (S)ort, (Q)uit : ';
 
     // Get the input from user
     // Use trim() to remove whitespace and newlines
@@ -65,7 +75,18 @@ do {
         $key = get_input();
         // Remove from array
         unset($items[$key - 1]);
-
+    } elseif ($input == 'S') {
+        //ask for order
+        echo 'Order (A)-Z or (Z)-A: ';
+        $input = get_input(TRUE);
+        //created menu to choose sort order
+        if ($input == 'A'){
+            sort($items);
+        } elseif ($input == 'Z') {
+            rsort($items);
+        } else {
+            echo "Enter A for A-Z or Z for Z-A!";
+        }
     }
 // Exit when input is (Q)uit
 } while ($input != 'Q');
