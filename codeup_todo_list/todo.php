@@ -41,6 +41,7 @@ do {
     if ($input == 'N') {
         // Ask for entry
         // echo 'Enter item: ';
+        //added inputing items at begining or end
         echo 'Add to (B)einging or (E)nd : ';
         $input = get_input(TRUE);
             echo "Enter item: ";
@@ -73,7 +74,14 @@ do {
         } else {
             echo "Enter A for A-Z or Z for Z-A!";
         }
-    }
+        //hidden menu to remove front and back end items
+    } elseif ($input == 'F'){
+        array_shift($items);
+    } elseif ($input == 'L'){
+        array_pop($items);
+    } 
+
+
 // Exit when input is (Q)uit
 } while ($input != 'Q');
 
