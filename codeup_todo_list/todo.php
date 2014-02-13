@@ -40,9 +40,20 @@ do {
     // Check for actionable input
     if ($input == 'N') {
         // Ask for entry
-        echo 'Enter item: ';
+        // echo 'Enter item: ';
+        echo 'Add to (B)einging or (E)nd : ';
+        $input = get_input(TRUE);
+            echo "Enter item: ";
+        if ($input == 'B'){
+            $input = get_input();
+            array_unshift($items, $input);
+        } else {
+            $input = get_input();
+            array_push($items, $input);
+        } 
+    
         // Add entry to list array
-        $items[] = get_input();
+        // $items[] = get_input();
     } elseif ($input == 'R') {
         // Remove which item?
         echo 'Enter item number to remove: ';
