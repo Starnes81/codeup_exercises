@@ -8,6 +8,18 @@ $compare = ['Tina', 'Dean', 'Mel', 'Amy', 'Michael'];
 $query = ['Tina', 'Bob'];
 
 
+function arrayCompare($arraySearch, $temparray){
+	$searchResult = 0;
+	foreach ($arraySearch as $lookup){
+		 if (is_numeric(array_search($lookup, $temparray))){
+		$searchResult++;
+		}
+	}return $searchResult; 
+}
+
+echo arrayCompare($compare, $names) . PHP_EOL;
+
+
 
 
 function testName($nameSearch, $temphay){
@@ -25,6 +37,9 @@ $answer2 = testName('Bob', $names);
 
 echo $answer1;
 echo $answer2;
+
+
+
 
 // function searchName($result, $array) {
 // 	$result = array_search($query, $names);
