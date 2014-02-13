@@ -3,13 +3,7 @@
 // Create array to hold list of todo items
 $items = array();
 
-// function list_items($list) {
-//     $key = $key=1; 
-//     foreach ($list as $key => $item) {
-//     return var_dump($list);
 
-//     }
-// }
 
 function list_items($list) {
     $result = '';
@@ -22,35 +16,16 @@ function list_items($list) {
 }
 
 function get_input($upper = FALSE){ 
-    $input =trim(fgets(STDIN));
+    $input = trim(fgets(STDIN));
     return $upper ? strtoupper($input) : $input;
-    }// if ($upper) {
-    //     return (strtoupper(trim(fgets(STDIN))));
-    // } else {
-    //     return trim(fgets(STDIN));
-    // }
+    }
 
-// function sort_menu ($sort = FALSE) {
-//     if ($sort =='S') {
-//         return 'Order A-Z' 
-//     } 
-
-// }
 
 
 // The loop!
 do {
     // Iterate through list items
-    // foreach ($items as $key => $item) {
-    //     //added $key=1 to out put 1 as default instead of 0
-    //     $key = $key+1;
-    //     // Display each item and a newline
-    //     switch ($key) {
-    //         case 0:
-
-    //         break;
-        
-    //         default:
+  
     echo list_items($items);
     
 
