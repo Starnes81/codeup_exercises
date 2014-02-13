@@ -7,16 +7,24 @@ $compare = ['Tina', 'Dean', 'Mel', 'Amy', 'Michael'];
 
 $query = ['Tina', 'Bob'];
 
-foreach ($query as $temp) {
-	$result = array_search($temp, $names);
-	if (is_numeric($result) == FALSE) {
-		echo "TRUE" . PHP_EOL;
+
+
+
+function testName($nameSearch, $temphay){
+	$result = array_search($nameSearch, $temphay);
+	if (is_numeric($result)) {
+		return "TRUE\n";
 	} else {
-		echo "FALSE" . PHP_EOL;
+		return "FALSE\n";
 	}
 
 }
 
+$answer1 = testName('Tina', $names);
+$answer2 = testName('Bob', $names);
+
+echo $answer1;
+echo $answer2;
 
 // function searchName($result, $array) {
 // 	$result = array_search($query, $names);
